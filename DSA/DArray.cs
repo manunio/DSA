@@ -23,8 +23,19 @@ public sealed class DArray<T> : IEnumerable<T>
 
     public T this[int index]
     {
-        get => arr[index];
-        set => arr[index] = value;
+        get
+        {
+            if (index < 0 || index >= length)
+                throw new ArgumentOutOfRangeException(nameof(index));
+            return arr[index];
+        }
+
+        set
+        {
+            if (index < 0 || index >= length)
+                throw new ArgumentOutOfRangeException(nameof(index));
+            arr[index] = value;
+        }
     }
 
     public void Clear()
