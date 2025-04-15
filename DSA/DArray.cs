@@ -18,8 +18,8 @@ public sealed class DArray<T> : IEnumerable<T>
         arr = new T[capacity];
     }
 
-    public int Size() => length;
-    public bool IsEmpty => Size() == 0;
+    public int Count => length;
+    public bool IsEmpty => Count == 0;
 
     public T this[int index]
     {

@@ -8,7 +8,7 @@ public sealed class DArrayTests
     {
         DArray<int> arr = CreateArrayWith(1, 2, 3);
 
-        Assert.Equal(3, arr.Size());
+        Assert.Equal(3, arr.Count);
 
         int[] expected = { 1, 2, 3 };
         int index = 0;
@@ -25,7 +25,7 @@ public sealed class DArrayTests
         DArray<int> arr = CreateArrayWith(1, 2, 3);
 
         arr.RemoveAt(1); // removes 2
-        Assert.Equal(2, arr.Size());
+        Assert.Equal(2, arr.Count);
         Assert.False(arr.Contains(2));
     }
 
@@ -59,7 +59,7 @@ public sealed class DArrayTests
         arr.Clear();
 
         Assert.True(arr.IsEmpty);
-        Assert.Equal(0, arr.Size());
+        Assert.Equal(0, arr.Count);
 
     }
 
