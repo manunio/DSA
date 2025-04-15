@@ -21,10 +21,11 @@ public sealed class DArray<T> : IEnumerable<T>
     public int Size() => length;
     public bool IsEmpty => Size() == 0;
 
-    public T Get(int index) => arr[index];
-
-    // Should this be bound checked?
-    public void Set(int index, T elem) => arr[index] = elem;
+    public T this[int index]
+    {
+        get => arr[index];
+        set => arr[index] = value;
+    }
 
     public void Clear()
     {

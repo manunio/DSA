@@ -67,9 +67,9 @@ public sealed class DArrayTests
     public void Get_And_Set_Works()
     {
         DArray<int> arr = CreateArrayWith(100, 200);
-        arr.Set(1, 999);
+        arr[1] = 999;
 
-        Assert.Equal(999, arr.Get(1));
+        Assert.Equal(999, arr[1]);
 
     }
 
