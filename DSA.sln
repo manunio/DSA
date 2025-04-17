@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grind75", "Grind75\Grind75.csproj", "{A27766AC-4398-4D8F-891D-88C0BBCD32EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grind75.Tests", "Grind75.Tests\Grind75.Tests.csproj", "{5CE20399-CC78-46FA-AF9B-E3FE6C3854A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{2B16A140-6360-47A0-922A-7E43AF12EE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B16A140-6360-47A0-922A-7E43AF12EE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B16A140-6360-47A0-922A-7E43AF12EE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A27766AC-4398-4D8F-891D-88C0BBCD32EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27766AC-4398-4D8F-891D-88C0BBCD32EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27766AC-4398-4D8F-891D-88C0BBCD32EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27766AC-4398-4D8F-891D-88C0BBCD32EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE20399-CC78-46FA-AF9B-E3FE6C3854A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE20399-CC78-46FA-AF9B-E3FE6C3854A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE20399-CC78-46FA-AF9B-E3FE6C3854A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE20399-CC78-46FA-AF9B-E3FE6C3854A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
