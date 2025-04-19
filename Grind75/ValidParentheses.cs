@@ -34,25 +34,32 @@ public static class ValidParentheses
 
         Dictionary<char, char> mapping = new()
         {
-            ['('] = ')',
-            ['{'] = '}',
-            ['['] = ']'
+            [')'] = '(',
+            ['}'] = '{',
+            [']'] = '['
         };
 
         Stack<char> stack = new();
 
         foreach (char c in s)
         {
-            if (mapping.ContainsKey(c))
+            if (!mapping.ContainsKey(c))
             {
-                stack.Push(mapping[c]);
+                stack.Push(c);
             }
             else
             {
-                if (stack.Count == 0 || stack.Pop() != c)
+                if (stack.Count == 0)
                 {
-
                     return false;
+                }
+                else
+                {
+                    char popped = stack.Pop();
+                    if (popped != mapping[c])
+                    {
+                        return false;
+                    }
                 }
             }
         }
