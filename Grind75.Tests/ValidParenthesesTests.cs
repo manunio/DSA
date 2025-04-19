@@ -15,10 +15,11 @@ public class ValidParenthesesTests
     [InlineData(")", false)]
     [InlineData("([{}])", true)]
     [InlineData("([{})", false)]
+    [InlineData("[()]{}", true)]
     public void StackApproach_ShouldValidateParenthesesCorrectly(string input, bool expected)
     {
         // Act
-       var result = ValidParentheses.StackApproach(input);
+        var result = ValidParentheses.StackApproach(input);
         // Assert
         Assert.Equal(expected, result);
     }
@@ -35,6 +36,7 @@ public class ValidParenthesesTests
     [InlineData(")", false)]
     [InlineData("([{}])", true)]
     [InlineData("([{})", false)]
+    [InlineData("[()]{}", true)]
     public void StackApproach1_ShouldValidateParenthesesCorrectly(string input, bool expected)
     {
         // Act
